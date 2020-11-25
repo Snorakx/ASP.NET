@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Wsei.ExchangeThings.Web.Database;
+using Wsei.ExchangeThings.Web.Entities;
 using Wsei.ExchangeThings.Web.Filters;
 using Wsei.ExchangeThings.Web.Models;
 
@@ -6,6 +8,14 @@ namespace Wsei.ExchangeThings.Web.Controllers
 {
     public class ExchangesController : Controller
     {
+
+        private readonly ExchangesDbContext _dbContext;
+        public ExchangesController(ExchangesDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
+
         [ServiceFilter(typeof(MyCustomActionFilter))]
         public IActionResult Show(string id)
         {
@@ -23,11 +33,14 @@ namespace Wsei.ExchangeThings.Web.Controllers
         {
             // TODO add to database
 
-            var viewModel = new AddNewItemConfirmationViewModel
+            var entity = new ItemEntities
             {
-                Id = 1,
                 Name = item.Name,
+                Description = item.Description,
+                IsVisible = item.IsVisible,
             };
+            _dbContext.Items.Add(entity);
+            _dbContext.SaveChanges();
 
             //return View("AddConfirmation", viewModel);
             return RedirectToAction("AddConfirmation", new { itemId = 1 });
@@ -38,5 +51,11 @@ namespace Wsei.ExchangeThings.Web.Controllers
         {
             return View(itemId);
         }
+
+
+
+     
+
+
     }
 }
