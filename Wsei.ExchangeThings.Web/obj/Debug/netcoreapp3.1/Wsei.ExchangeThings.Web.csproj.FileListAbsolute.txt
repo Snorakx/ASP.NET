@@ -78,3 +78,4 @@ C:\Users\patry\Documents\GitHub\ASP.NET\Wsei.ExchangeThings.Web\bin\Debug\netcor
 C:\Users\patry\Documents\GitHub\ASP.NET\Wsei.ExchangeThings.Web\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\patry\Documents\GitHub\ASP.NET\Wsei.ExchangeThings.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\patry\Documents\GitHub\ASP.NET\Wsei.ExchangeThings.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\patry\Documents\GitHub\ASP.NET\Wsei.ExchangeThings.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\ItemsView\Index.cshtml.g.cs

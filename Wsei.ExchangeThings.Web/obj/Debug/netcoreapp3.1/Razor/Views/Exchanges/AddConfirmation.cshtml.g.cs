@@ -27,7 +27,7 @@ using Wsei.ExchangeThings.Web.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6b1a659a4f3e92fc90fc5929548dcd718fafeaa6", @"/Views/Exchanges/AddConfirmation.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"be8b030cf87e1adb009cc1c951ba51bda7375ef4", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b8dee0c445313336835c4ee19b4d0dc7c5fabf86", @"/Views/_ViewImports.cshtml")]
     public class Views_Exchanges_AddConfirmation : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<int>
     {
         #pragma warning disable 1998
